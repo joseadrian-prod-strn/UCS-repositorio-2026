@@ -1,18 +1,100 @@
-/*******************************************************
- * Proyecto: UCS - Universidad de las Ciencias de la Salud
- * Autor: [Jose Adrian Gonzalez]
- * Lenguaje: C++
- * Descripción: Trabajo Repositorio
- *   Sistema conceptual que representa la estructura,
- *   misión y visión de la Universidad de las Ciencias
- *   de la Salud "Hugo Chávez Frías".
- *******************************************************/
+# 🏥 UCS - Universidad de las Ciencias de la Salud "Hugo Chávez Frías"
 
+![C++](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
+![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-green)
+![Licencia](https://img.shields.io/badge/Licencia-Académica-orange)
+
+---
+
+## 📌 Descripción del Proyecto
+
+Este proyecto es una representación conceptual desarrollada en **C++** que modela la estructura, misión, visión y funcionamiento académico de la **Universidad de las Ciencias de la Salud "Hugo Chávez Frías" (UCS)**.
+
+Simula un sistema institucional orientado a la formación de profesionales en el área de la salud, destacando valores éticos, compromiso social y excelencia académica.
+
+---
+
+## 🎯 Objetivos
+
+* Representar la estructura organizativa de la UCS mediante programación orientada a objetos.
+* Simular áreas académicas y programas de formación.
+* Mostrar información institucional de forma estructurada.
+* Aplicar conceptos de C++ en un entorno educativo.
+
+---
+
+## 🧠 Tecnologías Utilizadas
+
+* Lenguaje: **C++**
+* Paradigma: Programación Orientada a Objetos (POO)
+* Compilador sugerido: `g++`
+
+---
+
+## 📂 Estructura del Proyecto
+
+```
+UCS-Proyecto/
+│
+├── main.cpp
+├── universidad.h
+├── universidad.cpp
+├── facultad.h
+├── facultad.cpp
+├── estudiante.h
+├── estudiante.cpp
+└── README.md
+```
+
+---
+
+## ⚙️ Instalación y Compilación
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/ucs-proyecto.git
+cd ucs-proyecto
+```
+
+2. Compila el proyecto:
+
+```bash
+g++ main.cpp universidad.cpp facultad.cpp estudiante.cpp -o ucs
+```
+
+3. Ejecuta el programa:
+
+```bash
+./ucs
+```
+
+---
+
+## 🚀 Ejemplo de Implementación
+
+```cpp
 #include <iostream>
-#include <string>
+#include "universidad.h"
+
 using namespace std;
 
-// Clase que representa la universidad
+int main() {
+    Universidad ucs;
+
+    ucs.mostrarInformacion();
+    ucs.mostrarCarreras();
+    ucs.mostrarValores();
+
+    return 0;
+}
+```
+
+---
+
+## 🏫 Clase Universidad
+
+```cpp
 class Universidad {
 private:
     string nombre;
@@ -21,39 +103,130 @@ private:
     string vision;
 
 public:
-    Universidad() {
-        nombre = "Universidad de las Ciencias de la Salud Hugo Chávez Frías (UCS)";
-        pais = "Venezuela";
-        mision = "Formar profesionales integrales en el área de la salud con ética, compromiso social y excelencia académica.";
-        vision = "Ser una institución líder en la formación de talento humano en salud a nivel nacional e internacional.";
-    }
-
-    void mostrarInformacion() {
-        cout << "===== INFORMACIÓN INSTITUCIONAL =====" << endl;
-        cout << "Nombre: " << nombre << endl;
-        cout << "País: " << pais << endl;
-        cout << "Misión: " << mision << endl;
-        cout << "Visión: " << vision << endl;
-    }
+    Universidad();
+    void mostrarInformacion();
+    void mostrarCarreras();
+    void mostrarValores();
 };
+```
 
-// Función principal
-int main() {
-    Universidad ucs;
-    ucs.mostrarInformacion();
+---
 
-    cout << "\n===== ÁREAS DE FORMACIÓN =====" << endl;
-    cout << "- Medicina Integral Comunitaria" << endl;
-    cout << "- Enfermería" << endl;
-    cout << "- Odontología" << endl;
-    cout << "- Farmacia" << endl;
-    cout << "- Salud Pública" << endl;
+## 📚 Áreas de Formación
 
-    cout << "\n===== VALORES =====" << endl;
-    cout << "- Ética" << endl;
-    cout << "- Humanismo" << endl;
-    cout << "- Compromiso social" << endl;
-    cout << "- Solidaridad" << endl;
+* 🩺 Medicina Integral Comunitaria
+* 💉 Enfermería
+* 😷 Odontología
+* 💊 Farmacia
+* 🌎 Salud Pública
 
-    return 0;
-}
+---
+
+## 🌟 Valores Institucionales
+
+* Ética
+* Humanismo
+* Compromiso social
+* Solidaridad
+* Responsabilidad
+
+---
+
+## 🧩 Ejemplo de Salida del Sistema
+
+```
+===== INFORMACIÓN INSTITUCIONAL =====
+Nombre: Universidad de las Ciencias de la Salud Hugo Chávez Frías
+País: Venezuela
+
+===== MISIÓN =====
+Formar profesionales integrales en el área de la salud...
+
+===== VISIÓN =====
+Ser una institución líder en educación médica...
+
+===== CARRERAS =====
+- Medicina Integral Comunitaria
+- Enfermería
+- Odontología
+
+===== VALORES =====
+- Ética
+- Humanismo
+- Solidaridad
+```
+
+---
+
+## 👨‍🎓 Modelo de Estudiante
+
+```cpp
+class Estudiante {
+private:
+    string nombre;
+    int edad;
+    string carrera;
+
+public:
+    Estudiante(string n, int e, string c);
+    void mostrarDatos();
+};
+```
+
+---
+
+## 🏛️ Modelo de Facultad
+
+```cpp
+class Facultad {
+private:
+    string nombre;
+    string area;
+
+public:
+    Facultad(string n, string a);
+    void mostrarFacultad();
+};
+```
+
+---
+
+## 🔮 Futuras Mejoras
+
+* Sistema de inscripción de estudiantes
+* Base de datos simulada
+* Interfaz gráfica
+* Registro de notas
+* Gestión de profesores
+
+---
+
+## 🤝 Contribuciones
+
+Este proyecto es de carácter académico. Puedes contribuir mediante:
+
+* Fork del repositorio
+* Creación de nuevas funcionalidades
+* Mejora del código
+
+---
+
+## 📜 Licencia
+
+Este proyecto es de uso académico y educativo.
+
+---
+
+## 👨‍💻 Autor
+
+**[Jose Adrian]**
+Estudiante / Desarrollador
+
+---
+
+## 💬 Nota Final
+
+Este proyecto representa una integración entre la programación en C++ y el enfoque educativo de la UCS, destacando la importancia de la tecnología en la formación de profesionales de la salud.
+
+---
+
