@@ -50,20 +50,20 @@ UCS-Proyecto/
 
 ##  Instalación y Compilación
 
-1. Clona el repositorio:
+1. Clon repositorio:
 
 ```bash
 git clone https://github.com/tu-usuario/ucs-proyecto.git
 cd ucs-proyecto
 ```
 
-2. Compila el proyecto:
+2. Compilacion proyecto:
 
 ```bash
 g++ main.cpp universidad.cpp facultad.cpp estudiante.cpp -o ucs
 ```
 
-3. Ejecuta el programa:
+3.  programa:
 
 ```bash
 ./ucs
