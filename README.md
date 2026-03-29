@@ -1,4 +1,4 @@
-# 🏥 UCS - Universidad de las Ciencias de la Salud "Hugo Chávez Frías"
+#  UCS - Universidad de las Ciencias de la Salud "Hugo Chávez Frías"
 
 ![C++](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 ![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-green)
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Este proyecto es una representación conceptual desarrollada en **C++** que modela la estructura, misión, visión y funcionamiento académico de la **Universidad de las Ciencias de la Salud "Hugo Chávez Frías" (UCS)**.
 
@@ -14,7 +14,7 @@ Simula un sistema institucional orientado a la formación de profesionales en el
 
 ---
 
-## 🎯 Objetivos
+##  Objetivos
 
 * Representar la estructura organizativa de la UCS mediante programación orientada a objetos.
 * Simular áreas académicas y programas de formación.
@@ -23,7 +23,7 @@ Simula un sistema institucional orientado a la formación de profesionales en el
 
 ---
 
-## 🧠 Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 * Lenguaje: **C++**
 * Paradigma: Programación Orientada a Objetos (POO)
@@ -31,7 +31,7 @@ Simula un sistema institucional orientado a la formación de profesionales en el
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 UCS-Proyecto/
@@ -48,7 +48,7 @@ UCS-Proyecto/
 
 ---
 
-## ⚙️ Instalación y Compilación
+##  Instalación y Compilación
 
 1. Clona el repositorio:
 
@@ -71,7 +71,7 @@ g++ main.cpp universidad.cpp facultad.cpp estudiante.cpp -o ucs
 
 ---
 
-## 🚀 Ejemplo de Implementación
+##  Ejemplo de Implementación
 
 ```cpp
 #include <iostream>
@@ -92,7 +92,7 @@ int main() {
 
 ---
 
-## 🏫 Clase Universidad
+##  Clase Universidad
 
 ```cpp
 class Universidad {
@@ -112,7 +112,7 @@ public:
 
 ---
 
-## 📚 Áreas de Formación
+##  Áreas de Formación
 
 * 🩺 Medicina Integral Comunitaria
 * 💉 Enfermería
@@ -122,7 +122,7 @@ public:
 
 ---
 
-## 🌟 Valores Institucionales
+##  Valores Institucionales
 
 * Ética
 * Humanismo
@@ -132,7 +132,7 @@ public:
 
 ---
 
-## 🧩 Ejemplo de Salida del Sistema
+##  Ejemplo de Salida del Sistema
 
 ```
 ===== INFORMACIÓN INSTITUCIONAL =====
@@ -158,7 +158,7 @@ Ser una institución líder en educación médica...
 
 ---
 
-## 👨‍🎓 Modelo de Estudiante
+##  Modelo de Estudiante
 
 ```cpp
 class Estudiante {
@@ -191,7 +191,7 @@ public:
 
 ---
 
-## 🔮 Futuras Mejoras
+##  Futuras Mejoras
 
 * Sistema de inscripción de estudiantes
 * Base de datos simulada
@@ -201,7 +201,7 @@ public:
 
 ---
 
-## 🤝 Contribuciones
+##  Contribuciones
 
 Este proyecto es de carácter académico. Puedes contribuir mediante:
 
@@ -211,7 +211,7 @@ Este proyecto es de carácter académico. Puedes contribuir mediante:
 
 ---
 
-## 📜 Licencia
+##  Licencia
 
 Este proyecto es de uso académico y educativo.
 
@@ -224,7 +224,7 @@ Estudiante / Desarrollador
 
 ---
 
-## 💬 Nota Final
+##  Nota Final
 
 Este proyecto representa una integración entre la programación en C++ y el enfoque educativo de la UCS, destacando la importancia de la tecnología en la formación de profesionales de la salud.
 
